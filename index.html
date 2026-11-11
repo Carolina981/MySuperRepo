@@ -249,11 +249,18 @@
       color: #3c704e;
       font-size: 21px;
     }
-    .hero-visual img {
+    .holiday-scene {
       width: 100%;
       aspect-ratio: 1 / 1;
       border-radius: 20px;
-      object-fit: cover;
+      overflow: hidden;
+      background: #f8efe1;
+      box-shadow: 0 8px 22px rgba(83, 49, 30, .12);
+    }
+    .holiday-scene svg {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
     .hero-caption {
       position: absolute;
@@ -579,7 +586,7 @@
         padding: 16px;
         border-radius: 22px;
       }
-      .hero-visual img { border-radius: 15px; }
+      .holiday-scene { border-radius: 15px; }
       .catalog {
         width: min(100% - 30px, 520px);
         padding: 55px 0 62px;
@@ -629,8 +636,76 @@
           <p class="hero-note">Precios y contenidos según el catálogo 2026.</p>
         </div>
         <div class="hero-visual">
-          <img src="assets/images/catalogo/canasta-902061.jpg" alt="Canasta Nº 05 con los productos del catálogo 2026">
-          <span class="hero-caption">Canasta Nº 05 · Código 902061</span>
+          <div class="holiday-scene" role="img" aria-label="Ilustración navideña con un árbol decorado, luces cálidas, regalos y nieve">
+            <svg viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="winter-sky" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#fffaf0"/>
+                  <stop offset="1" stop-color="#e8d9c4"/>
+                </linearGradient>
+                <linearGradient id="evergreen" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#39754f"/>
+                  <stop offset="1" stop-color="#174932"/>
+                </linearGradient>
+                <linearGradient id="gift-red" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#d84a46"/>
+                  <stop offset="1" stop-color="#a9242b"/>
+                </linearGradient>
+                <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="170%">
+                  <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#51351e" flood-opacity=".18"/>
+                </filter>
+              </defs>
+              <rect width="600" height="600" fill="url(#winter-sky)"/>
+              <circle cx="300" cy="265" r="225" fill="#fffaf2" opacity=".8"/>
+              <circle cx="103" cy="163" r="37" fill="#fff" opacity=".4"/>
+              <circle cx="493" cy="218" r="52" fill="#fff" opacity=".36"/>
+              <g fill="#fff" opacity=".82">
+                <circle cx="86" cy="84" r="4"/><circle cx="154" cy="124" r="3"/><circle cx="459" cy="88" r="4"/>
+                <circle cx="527" cy="145" r="3"/><circle cx="109" cy="294" r="3"/><circle cx="485" cy="322" r="4"/>
+                <circle cx="151" cy="376" r="3"/><circle cx="449" cy="375" r="3"/><circle cx="212" cy="79" r="2"/>
+              </g>
+              <path d="M0 450c95-31 148 21 243-3 93-24 168-26 245 0 39 13 77 8 112-2v155H0z" fill="#fffaf3"/>
+              <ellipse cx="300" cy="488" rx="173" ry="27" fill="#cdbb9f" opacity=".34"/>
+              <g filter="url(#soft-shadow)">
+                <path d="M300 101 273 151l23-4-52 84h34l-65 91h49l-84 104h244l-84-104h49l-65-91h34l-52-84 23 4z" fill="url(#evergreen)"/>
+                <path d="M300 150 263 222h26l-48 79h40l-63 91h164l-63-91h40l-48-79h26z" fill="#3f8158" opacity=".55"/>
+                <path d="M286 414h28v65h-28z" rx="3" fill="#805131"/>
+                <path d="M300 84l8 16 18 3-13 12 3 18-16-9-16 9 3-18-13-12 18-3z" fill="#e6b84f" stroke="#fff1be" stroke-width="3"/>
+                <path d="M264 230c22 13 50 19 73 3M235 313c37 18 92 19 130 0M210 391c51 21 128 21 180 0" fill="none" stroke="#e5bd65" stroke-width="5" stroke-linecap="round"/>
+                <g stroke="#f6e5bd" stroke-width="2">
+                  <path d="M256 237v13M327 228v13M229 319v14M365 310v13M218 398v14M380 390v14"/>
+                </g>
+                <g stroke="#fff3d3" stroke-width="3">
+                  <circle cx="256" cy="251" r="10" fill="#bd3034"/><circle cx="327" cy="242" r="10" fill="#e2ae47"/>
+                  <circle cx="229" cy="333" r="10" fill="#e2ae47"/><circle cx="365" cy="323" r="10" fill="#bd3034"/>
+                  <circle cx="218" cy="412" r="10" fill="#bd3034"/><circle cx="380" cy="404" r="10" fill="#e2ae47"/>
+                  <circle cx="300" cy="280" r="9" fill="#d8a84b"/><circle cx="300" cy="365" r="10" fill="#bd3034"/>
+                </g>
+              </g>
+              <g filter="url(#soft-shadow)">
+                <rect x="156" y="414" width="102" height="82" rx="7" fill="url(#gift-red)"/>
+                <path d="M198 414h18v82h-18zM156 443h102v16H156z" fill="#edc76a"/>
+                <path d="M207 415c-33-30-44 4-9 8m9-8c34-30 45 4 9 8" fill="none" stroke="#edc76a" stroke-width="9" stroke-linecap="round"/>
+                <rect x="344" y="427" width="108" height="69" rx="7" fill="#477d59"/>
+                <path d="M389 427h18v69h-18zM344 451h108v15H344z" fill="#f0cf76"/>
+                <path d="M398 428c-29-28-39 4-8 8m8-8c30-28 40 4 8 8" fill="none" stroke="#f0cf76" stroke-width="8" stroke-linecap="round"/>
+                <rect x="264" y="453" width="76" height="51" rx="6" fill="#d8a64a"/>
+                <path d="M293 453h17v51h-17zM264 470h76v12h-76z" fill="#fff5dd"/>
+              </g>
+              <g fill="#bd3034">
+                <circle cx="110" cy="482" r="6"/><circle cx="123" cy="473" r="6"/><circle cx="136" cy="483" r="6"/>
+                <circle cx="465" cy="490" r="6"/><circle cx="478" cy="480" r="6"/><circle cx="491" cy="490" r="6"/>
+              </g>
+              <g stroke="#39754f" stroke-width="4" stroke-linecap="round">
+                <path d="M123 489l-12-17m12 17 1-22m-1 22 16-17M478 497l-12-17m12 17 1-22m-1 22 16-17"/>
+              </g>
+              <g fill="#fff" opacity=".92">
+                <circle cx="74" cy="419" r="4"/><circle cx="527" cy="414" r="4"/><circle cx="91" cy="354" r="3"/>
+                <circle cx="514" cy="283" r="3"/><circle cx="176" cy="536" r="3"/><circle cx="427" cy="541" r="3"/>
+              </g>
+            </svg>
+          </div>
+          <span class="hero-caption">Felices fiestas · Navidad 2026</span>
         </div>
       </div>
     </section>
