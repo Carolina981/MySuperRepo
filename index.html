@@ -252,34 +252,31 @@
     .holiday-collage {
       position: relative;
       width: 100%;
-      aspect-ratio: .76 / 1;
       border-radius: 22px;
       overflow: hidden;
       background: #ead7bb;
     }
     .holiday-photo {
-      position: absolute;
       display: block;
       border: 7px solid #fffaf2;
       border-radius: 20px;
-      object-fit: cover;
       box-shadow: 0 16px 32px rgba(49, 25, 18, .25);
     }
     .holiday-photo-gifts {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 88%;
-      height: 100%;
-      object-position: center;
+      position: relative;
+      z-index: 0;
+      width: 100%;
+      height: auto;
       transform: rotate(-1.5deg);
     }
     .holiday-photo-lantern {
+      position: absolute;
+      z-index: 1;
       top: 12%;
       right: 0;
       width: 43%;
-      height: 60%;
-      object-position: center;
+      height: auto;
+      aspect-ratio: 738 / 960;
       border-width: 6px;
       transform: rotate(3deg);
     }
