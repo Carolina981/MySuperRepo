@@ -1,24 +1,17 @@
 CANASTAS NAVIDEÑAS 2026 · PUBLICACIÓN GRATUITA
 
-El sitio está preparado para publicarse en GitHub Pages desde esta cuenta:
-https://github.com/Carolina981
+Repositorio: https://github.com/Carolina981/MySuperRepo
+Dirección del sitio: https://carolina981.github.io/MySuperRepo/
 
-1. Crea un repositorio público llamado exactamente Carolina981.github.io.
-   En GitHub: botón + > New repository > nombre Carolina981.github.io > Public.
-   Deja marcada la opción Add a README file para crear la rama main.
-2. Sube al nivel principal del repositorio todo lo que está en esta carpeta:
-   index.html, robots.txt, sitemap.xml y la carpeta assets.
-3. En el repositorio, abre Settings > Pages.
-4. En Build and deployment, selecciona Deploy from a branch; elige main y / (root), y pulsa Save.
-5. La web quedará en https://carolina981.github.io/MySuperRepo/ y ya no tendrá la caducidad
-   de siete días del enlace de Ship.page.
+Los archivos de la web ya están cargados en el repositorio. Para activar la
+publicación, abre Settings > Pages. En Build and deployment, elige Deploy from
+a branch, selecciona main y / (root), y pulsa Save.
 
-Para ayudar a Google a encontrarla, agrega https://carolina981.github.io/MySuperRepo/ en
-Google Search Console y envía el mapa del sitio:
+Cuando la web esté en línea, puedes añadir la dirección en Google Search
+Console y enviar el mapa del sitio:
 https://carolina981.github.io/MySuperRepo/sitemap.xml
-Luego puedes pedir que Google rastree la página principal. La indexación y la
-posición en resultados dependen de Google y no se pueden garantizar.
+Desde Search Console también puedes pedir que Google rastree la página. La
+indexación puede tardar y la aparición o posición en resultados depende de
+Google.
 
-El repositorio gratuito debe ser público; por eso los archivos del sitio se
-podrán ver desde GitHub. El contenido del catálogo y las fotos corresponden al
-material preparado para la web.
+El repositorio gratuito es público y sus archivos pueden verse en GitHub.
