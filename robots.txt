@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carolina981.github.io/MySuperRepo/sitemap.xml
