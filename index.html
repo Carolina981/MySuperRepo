@@ -218,8 +218,8 @@
       position: relative;
       justify-self: end;
       width: min(100%, 470px);
-      padding: 20px;
-      border: 2px solid rgba(183, 137, 55, .38);
+      padding: 24px;
+      border: 2px solid rgba(183, 137, 55, .55);
       border-radius: 28px;
       background:
         radial-gradient(circle at 8% 14%, rgba(186, 45, 48, .24) 0 5px, transparent 6px),
@@ -236,17 +236,18 @@
       pointer-events: none;
     }
     .hero-visual::before {
-      top: 0;
-      right: 28px;
-      content: "✦  ✧  ✦";
-      font-size: 20px;
+      top: 1px;
+      right: 30px;
+      color: #b78937;
+      content: "✦  ❄  ✦";
+      font-size: 22px;
     }
     .hero-visual::after {
-      bottom: 8px;
-      left: 1px;
-      content: "❄  ✧  ❄";
-      color: #52785c;
-      font-size: 19px;
+      bottom: 5px;
+      left: 5px;
+      content: "❄  ✦  ❄";
+      color: #3c704e;
+      font-size: 21px;
     }
     .hero-visual img {
       width: 100%;
@@ -312,7 +313,8 @@
     .product-image-wrap {
       position: relative;
       overflow: hidden;
-      padding: 27px 18px;
+      padding: 33px 22px;
+      border-bottom: 3px solid #b78937;
       background-color: #f2e8d8;
       background-image:
         radial-gradient(circle at 8% 10%, rgba(186, 45, 48, .28) 0 5px, transparent 6px),
@@ -328,18 +330,22 @@
       pointer-events: none;
     }
     .product-image-wrap::before {
-      top: 1px;
-      right: 15px;
-      color: var(--gold);
-      content: "✦  ✧  ✦";
-      font-size: 17px;
+      top: 0;
+      right: 0;
+      left: 0;
+      color: #a62b2e;
+      content: "✦  ❄  ✦  ❄  ✦";
+      font-size: 20px;
+      text-align: center;
     }
     .product-image-wrap::after {
-      bottom: 0;
-      left: 14px;
-      color: #52785c;
-      content: "❄  ✧  ❄";
-      font-size: 15px;
+      right: 0;
+      bottom: 1px;
+      left: 0;
+      color: #356846;
+      content: "❄  ✦  ❄  ✦  ❄";
+      font-size: 18px;
+      text-align: center;
     }
     .product-image {
       width: 100%;
@@ -570,7 +576,7 @@
       .hero-visual {
         justify-self: center;
         width: min(100%, 420px);
-        padding: 10px;
+        padding: 16px;
         border-radius: 22px;
       }
       .hero-visual img { border-radius: 15px; }
