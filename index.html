@@ -280,6 +280,27 @@
       border-width: 6px;
       transform: rotate(3deg);
     }
+    .hero-logo {
+      position: absolute;
+      z-index: 3;
+      top: 16px;
+      left: 16px;
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(183, 137, 55, .8);
+      border-radius: 50%;
+      color: #812124;
+      background: rgba(255, 250, 240, .96);
+      box-shadow: 0 5px 16px rgba(49, 25, 18, .24), inset 0 0 0 3px rgba(183, 137, 55, .16);
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -.08em;
+      line-height: 1;
+      pointer-events: none;
+    }
     .holiday-collage::before,
     .holiday-collage::after {
       position: absolute;
@@ -688,6 +709,7 @@
           <div class="holiday-collage" role="group" aria-label="Decoración navideña con regalos y un farol iluminado">
             <img class="holiday-photo holiday-photo-gifts" src="assets/images/navidad/regalo-navideno.jpg" alt="Caja de regalo navideña con una vela, chocolates y detalles rojos">
             <img class="holiday-photo holiday-photo-lantern" src="assets/images/navidad/farol-navideno.jpg" alt="Farol rojo con una vela, ramas de pino, piñas y lazos festivos">
+            <span class="hero-logo" aria-label="Logo LG">LG</span>
           </div>
           <span class="hero-caption">Felices fiestas · Navidad 2026</span>
         </div>
