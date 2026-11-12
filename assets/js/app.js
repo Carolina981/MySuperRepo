@@ -3,7 +3,7 @@ const catalog = [
     number: "01",
     code: "902054",
     title: "Canasta Nº 01",
-    image: "assets/images/catalogo/canasta-902054.jpg",
+    image: "assets/images/catalogo/canasta-902054-arbol.png",
     price: 1790,
     netPrice: 1467.2,
     items: [
@@ -28,7 +28,7 @@ const catalog = [
     number: "02",
     code: "902055",
     title: "Canasta Nº 02",
-    image: "assets/images/catalogo/canasta-902055.jpg",
+    image: "assets/images/catalogo/canasta-902055-arbol.png",
     price: 2390,
     netPrice: 1959,
     items: [
@@ -57,7 +57,7 @@ const catalog = [
         code: "902055C",
         price: 2090,
         netPrice: 1713,
-        image: "assets/images/catalogo/caja-902055c.jpg"
+        image: "assets/images/catalogo/caja-902055c-arbol.png"
       }
     ]
   },
@@ -65,7 +65,7 @@ const catalog = [
     number: "03",
     code: "902056",
     title: "Canasta Nº 03",
-    image: "assets/images/catalogo/canasta-902056.jpg",
+    image: "assets/images/catalogo/canasta-902056-arbol.png",
     price: 3490,
     netPrice: 2860.65,
     items: [
@@ -102,7 +102,7 @@ const catalog = [
     number: "04",
     code: "902060",
     title: "Canasta Nº 04",
-    image: "assets/images/catalogo/canasta-902060.jpg",
+    image: "assets/images/catalogo/canasta-902060-arbol.png",
     price: 4490,
     netPrice: 3680.3,
     items: [
@@ -135,7 +135,7 @@ const catalog = [
     number: "05",
     code: "902061",
     title: "Canasta Nº 05",
-    image: "assets/images/catalogo/canasta-902061.jpg",
+    image: "assets/images/catalogo/canasta-902061-arbol.png",
     price: 5490,
     netPrice: 4500,
     items: [
